@@ -27,11 +27,27 @@ public class MainActivity extends BaseActivity {
     }
 
     private void addViews() {
+        testKotlin();
         bitmapWidthButton();
         switchButton();
         canvasButton();
         testWebpButton();
     }
+
+
+
+    private void testKotlin() {
+        Button button = new Button(mContext);
+        button.setText("test kotlin");
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(mContext, TestKotlinActivity.class));
+            }
+        });
+        llContainer.addView(button);
+    }
+
     private void bitmapWidthButton() {
         Button button = new Button(mContext);
         button.setText("查看bitmap");

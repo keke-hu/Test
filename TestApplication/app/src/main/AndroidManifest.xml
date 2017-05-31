@@ -20,7 +20,7 @@
         <activity android:name=".CanvasActivity" />
         <activity android:name=".TestWebPActivity" />
         <activity android:name=".BitmapWidthActivity" />
-        <activity android:name=".TestKotlinActivity"></activity>
+        <activity android:name=".TestKotlinActivity"/>
     </application>
 
 </manifest>
