@@ -9,12 +9,14 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+import static test.mmote.com.testapplication.R.id.tv_resolution;
+
 /**
  * Created by KeKe on 2017/5/25.
  */
 
 public class BitmapWidthActivity extends BaseActivity {
-    @Bind(R.id.tv_resolution)
+    @Bind(tv_resolution)
     TextView tvResolution;
     @Bind(R.id.tv_width)
     TextView tvWidth;
@@ -26,9 +28,9 @@ public class BitmapWidthActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bitmap_width);
         ButterKnife.bind(this);
-        Bitmap bitmap=BitmapFactory.decodeResource(getResources(), R.mipmap.maimeng_logo);
-        tvResolution.setText(getResources().getDisplayMetrics().density+"");
-        tvHeight.setText(bitmap.getHeight());
-        tvWidth.setText(bitmap.getWidth());
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.maimeng_logo);
+        tvResolution.setText(getResources().getDisplayMetrics().density + "");
+        tvHeight.setText(bitmap.getHeight() + "");
+        tvWidth.setText(bitmap.getWidth() + "");
     }
 }
