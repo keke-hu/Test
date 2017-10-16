@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="test.mmote.com.testapplication">
 
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
@@ -20,7 +29,23 @@
         <activity android:name=".CanvasActivity" />
         <activity android:name=".TestWebPActivity" />
         <activity android:name=".BitmapWidthActivity" />
-        <activity android:name=".TestKotlinActivity"/>
+        <activity android:name=".TestKotlinActivity" />
+        <activity android:name=".ToolbarActivity" />
+        <activity android:name=".PidActivity" />
+        <activity android:name=".RecycleviewActivity" />
+        <activity android:name=".RActivity" />
+        <activity android:name=".TestEnumActivity" />
+        <activity android:name=".TestEnum1Activity" />
+        <activity android:name=".TestConstraintLayoutActivity" />
+        <activity android:name=".TestRadarActivity" />
+        <activity android:name=".RxJavaActivity" />
+        <activity android:name=".MarqueeActivity" />
+        <activity android:name=".PermissionsActivity" />
+        <activity android:name=".RecordAudioActivity" />
+        <activity android:name=".TestTimeActivity" />
+        <activity android:name=".TestExpandTextViewActivity" />
+        <activity android:name=".TestRuningTextViewActivity"/>
+        <activity android:name=".interview.InterviewActivity"/>
     </application>
 
 </manifest>

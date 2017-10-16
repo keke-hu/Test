@@ -9,7 +9,8 @@ import android.widget.Toast
  */
 
 open class BaseActivity : AppCompatActivity() {
-    var mContext: BaseActivity? = null
+    public open var mContext: BaseActivity? = null
+    protected open val TAG = this.javaClass.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,5 +19,14 @@ open class BaseActivity : AppCompatActivity() {
 
     protected fun showToast(toast: String) {
         Toast.makeText(mContext, toast, Toast.LENGTH_SHORT).show()
+    }
+
+
+    protected fun toast(s: String) {
+        Toast.makeText(mContext, s, Toast.LENGTH_SHORT).show()
+    }
+
+    protected fun longToast(s: String) {
+        Toast.makeText(mContext, s, Toast.LENGTH_LONG).show()
     }
 }

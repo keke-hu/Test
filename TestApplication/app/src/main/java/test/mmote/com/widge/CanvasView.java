@@ -4,8 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.RectF;
-import android.text.TextPaint;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -30,25 +29,21 @@ public class CanvasView extends View {
     @Override
     public void draw(Canvas canvas) {
         super.draw(canvas);
-        canvas.save();
-        RectF targetRect = new RectF(0, 10, 500, 800);
-        String TEXT = "fdsafdsf";
-        TextPaint mTextPaint = new TextPaint();
-        mTextPaint.setColor(Color.BLACK);
-        mTextPaint.setTextSize(50);
-        // 计算Baseline绘制的起点X轴坐标 ，计算方式：画布宽度的一半 - 文字宽度的一半
-        int baseX = (int) (canvas.getWidth() / 2 - mTextPaint.measureText(TEXT) / 2);
-
-        // 计算Baseline绘制的Y坐标 ，计算方式：画布高度的一半 - 文字总高度的一半
-        int baseY = (int) ((canvas.getHeight() / 2) - ((mTextPaint.descent() + mTextPaint.ascent()) / 2));
-
-        // 居中画一个文字
-        canvas.drawText(TEXT, baseX, baseY, mTextPaint);
-        Paint paint=new Paint();
+        Rect targetRect = new Rect(50, 50, 1000, 126);
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paint.setStrokeWidth(3);
+        paint.setTextSize(80);
+        paint.setColor(Color.CYAN);
+        canvas.drawRect(targetRect, paint);
         paint.setColor(Color.RED);
-        paint.setStrokeWidth(2);
-        // 为了便于理解我们在画布中心处绘制一条中线
-        canvas.drawLine(0, canvas.getHeight() / 2, canvas.getWidth(), canvas.getHeight() / 2, paint);
-        canvas.restore();
+        Paint.FontMetrics fontMetrics = paint.getFontMetrics();
+        // 转载请注明出处：http://blog.csdn.net/hursing
+        float baseline = (targetRect.bottom + targetRect.top - fontMetrics.bottom - fontMetrics.top) / 2;
+        // 下面这行是实现水平居中，drawText对应改为传入targetRect.centerX()
+        String testString = "b:" + fontMetrics.bottom + "t:" + fontMetrics.top;
+        paint.setTextAlign(Paint.Align.CENTER);
+        canvas.drawText(testString, targetRect.centerX(), baseline, paint);
+        paint.setTextSize(40);
+        canvas.drawText(testString,targetRect.centerX(), baseline,paint);
     }
 }

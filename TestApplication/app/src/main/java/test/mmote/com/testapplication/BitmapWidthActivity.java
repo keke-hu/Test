@@ -2,8 +2,10 @@ package test.mmote.com.testapplication;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import butterknife.Bind;
@@ -22,6 +24,10 @@ public class BitmapWidthActivity extends BaseActivity {
     TextView tvWidth;
     @Bind(R.id.tv_height)
     TextView tvHeight;
+    @Bind(R.id.iv_test)
+    ImageView ivTest;
+    @Bind(R.id.iv_test1)
+    ImageView ivTest1;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -32,5 +38,18 @@ public class BitmapWidthActivity extends BaseActivity {
         tvResolution.setText(getResources().getDisplayMetrics().density + "");
         tvHeight.setText(bitmap.getHeight() + "");
         tvWidth.setText(bitmap.getWidth() + "");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ivTest1.setImageBitmap(createBitmap(ivTest));
+    }
+
+    public Bitmap createBitmap(ImageView imageView) {
+        Bitmap bitmap = Bitmap.createBitmap(300, 200, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        imageView.draw(canvas);
+        return bitmap;
     }
 }

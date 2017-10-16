@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TestApplication</string>
+    <string name="time" formatted="false">00:%s</string>
 </resources>
