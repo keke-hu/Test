@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="test.mmote.com.testapplication.TestExpandTextViewActivity">
+
+    <test.mmote.com.widge.ExpandableLinearLayout
+        android:id="@+id/expandableTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:orientation="vertical"
+        app:expand="false"
+        app:max_height="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="sdfdsfdfdfdfdf" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="sdfdsfdfdfdfdf" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="sdfdsfdfdfdfdf" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="sdfdsfdfdfdfdf" />
+
+    </test.mmote.com.widge.ExpandableLinearLayout>
+
+
+    <Button
+        android:id="@+id/button_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开" />
+
+</LinearLayout>

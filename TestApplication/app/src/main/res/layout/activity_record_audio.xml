@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="录制音频必须为真人声音，且不少于5秒不长于15秒\n否则无法通过审核" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="00:00"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_record_again"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@drawable/sound_record_selector" />
+
+
+        <ImageView
+            android:id="@+id/iv_star"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/sound_star_selector" />
+
+        <ImageView
+            android:id="@+id/iv_complete"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@drawable/sound_complete_selector" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_height="wrap_content"
+        android:layout_width="318dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginTop="139dp"
+        android:text="确定" />
+</LinearLayout>

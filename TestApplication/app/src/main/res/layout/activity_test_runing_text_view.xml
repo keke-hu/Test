@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.mmote.com.testapplication.TestRuningTextViewActivity">
+
+    <test.mmote.com.widge.runingtextview.NumberRunningTextView
+        android:id="@+id/nrtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="66666"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:minMoney="100"
+        app:textType="money"
+        app:useCommaFormat="true"
+        app:useDecimalPoint="false" />
+
+</RelativeLayout>
