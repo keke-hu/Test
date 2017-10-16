@@ -17,6 +17,7 @@ class MainActivity : BaseActivity() {
     }
 
     private fun addViews() {
+        testJavaOrder()
         testRunText()
         testExpand()
         testTime()
@@ -37,6 +38,17 @@ class MainActivity : BaseActivity() {
         canvasButton()
         testWebpButton()
     }
+
+
+    private fun testJavaOrder() {
+        val button = Button(mContext)
+        button.text = "test java order"
+        button.setOnClickListener {
+            startActivity(Intent(this, TestJavaActivity::class.java))
+        }
+        ll_container!!.addView(button)
+    }
+
 
     private fun testRunText() {
         val button = Button(mContext)
