@@ -17,6 +17,7 @@ class MainActivity : BaseActivity() {
     }
 
     private fun addViews() {
+        testWave()
         testJavaOrder()
         testRunText()
         testExpand()
@@ -37,6 +38,16 @@ class MainActivity : BaseActivity() {
         switchButton()
         canvasButton()
         testWebpButton()
+    }
+
+
+    private fun testWave() {
+        val button = Button(mContext)
+        button.text = "test wave"
+        button.setOnClickListener {
+            startActivity(Intent(this, TestWaveTextViewActivity::class.java))
+        }
+        ll_container!!.addView(button)
     }
 
 

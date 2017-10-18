@@ -46,7 +46,8 @@
         <activity android:name=".TestExpandTextViewActivity" />
         <activity android:name=".TestRuningTextViewActivity" />
         <activity android:name=".interview.InterviewActivity" />
-        <activity android:name=".TestJavaActivity"/>
+        <activity android:name=".TestJavaActivity" />
+        <activity android:name=".TestWaveTextViewActivity"></activity>
     </application>
 
 </manifest>
