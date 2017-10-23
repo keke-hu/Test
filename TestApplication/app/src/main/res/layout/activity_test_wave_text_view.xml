@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="test.mmote.com.testapplication.TestWaveTextViewActivity">
+    tools:context="test.mmote.com.activity.TestWaveTextViewActivity">
 
     <test.mmote.com.widge.WaveTextView
         android:layout_width="match_parent"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="test.mmote.com.testapplication.TestRuningTextViewActivity">
+    tools:context="test.mmote.com.activity.TestRuningTextViewActivity">
 
     <test.mmote.com.widge.runingtextview.NumberRunningTextView
         android:id="@+id/nrtv"

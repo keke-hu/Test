@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="test.mmote.com.testapplication">
+    package="test.mmote.com.activity">
 
     <!-- 录音权限 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
@@ -18,36 +18,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="test.mmote.com.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SwitchButtonActivity" />
-        <activity android:name=".CanvasActivity" />
-        <activity android:name=".TestWebPActivity" />
-        <activity android:name=".BitmapWidthActivity" />
-        <activity android:name=".TestKotlinActivity" />
-        <activity android:name=".ToolbarActivity" />
-        <activity android:name=".PidActivity" />
-        <activity android:name=".RecycleviewActivity" />
-        <activity android:name=".RActivity" />
-        <activity android:name=".TestEnumActivity" />
-        <activity android:name=".TestEnum1Activity" />
-        <activity android:name=".TestConstraintLayoutActivity" />
-        <activity android:name=".TestRadarActivity" />
-        <activity android:name=".RxJavaActivity" />
-        <activity android:name=".MarqueeActivity" />
-        <activity android:name=".PermissionsActivity" />
-        <activity android:name=".RecordAudioActivity" />
-        <activity android:name=".TestTimeActivity" />
-        <activity android:name=".TestExpandTextViewActivity" />
-        <activity android:name=".TestRuningTextViewActivity" />
-        <activity android:name=".interview.InterviewActivity" />
-        <activity android:name=".TestJavaActivity" />
-        <activity android:name=".TestWaveTextViewActivity"></activity>
+        <activity android:name="test.mmote.com.activity.SwitchButtonActivity" />
+        <activity android:name="test.mmote.com.activity.CanvasActivity" />
+        <activity android:name="test.mmote.com.activity.TestWebPActivity" />
+        <activity android:name="test.mmote.com.activity.BitmapWidthActivity" />
+        <activity android:name="test.mmote.com.activity.TestKotlinActivity" />
+        <activity android:name="test.mmote.com.activity.ToolbarActivity" />
+        <activity android:name="test.mmote.com.activity.PidActivity" />
+        <activity android:name="test.mmote.com.activity.RecycleviewActivity" />
+        <activity android:name="test.mmote.com.activity.RActivity" />
+        <activity android:name="test.mmote.com.activity.TestEnumActivity" />
+        <activity android:name="test.mmote.com.activity.TestEnum1Activity" />
+        <activity android:name="test.mmote.com.activity.TestConstraintLayoutActivity" />
+        <activity android:name="test.mmote.com.activity.TestRadarActivity" />
+        <activity android:name="test.mmote.com.activity.RxJavaActivity" />
+        <activity android:name="test.mmote.com.activity.MarqueeActivity" />
+        <activity android:name="test.mmote.com.activity.PermissionsActivity" />
+        <activity android:name="test.mmote.com.activity.RecordAudioActivity" />
+        <activity android:name="test.mmote.com.activity.TestTimeActivity" />
+        <activity android:name="test.mmote.com.activity.TestExpandTextViewActivity" />
+        <activity android:name="test.mmote.com.activity.TestRuningTextViewActivity" />
+        <activity android:name="test.mmote.com.activity.interview.InterviewActivity" />
+        <activity android:name="test.mmote.com.activity.TestJavaActivity" />
+        <activity android:name="test.mmote.com.activity.TestWaveTextViewActivity" />
+        <activity android:name="test.mmote.com.activity.TestFragmentActivity"></activity>
     </application>
 
 </manifest>

@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.mmote.play.bean.OrderBean;
 
-import test.mmote.com.testapplication.R;
+import test.mmote.com.activity.R;
 
 /**
  * Created by KeKe on 2017/7/14.

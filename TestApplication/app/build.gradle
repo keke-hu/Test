@@ -14,7 +14,19 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            /**
+             * 日志开关，debug版本打开日志
+             */
+            buildConfigField 'boolean', 'DEBUGGING', 'true'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
         release {
+            /**
+             * 日志开关，发布版本关闭日志，会映射到BuildConfig类中
+             */
+            buildConfigField 'boolean', 'DEBUGGING', 'false'
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

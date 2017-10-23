@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="test.mmote.com.testapplication.MarqueeActivity">
+    tools:context="test.mmote.com.activity.MarqueeActivity">
     <LinearLayout
         android:layout_centerInParent="true"
         android:layout_width="match_parent"

@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 
-import test.mmote.com.testapplication.R;
+import test.mmote.com.activity.R;
 
 /**
  * 数字滚动的textView

@@ -12,7 +12,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.LinearLayout;
 
 import at.blogc.android.views.ExpandableTextView;
-import test.mmote.com.testapplication.R;
+import test.mmote.com.activity.R;
 
 /**
  * Created by KeKe on 2017/9/29.
