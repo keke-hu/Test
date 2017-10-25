@@ -51,6 +51,8 @@ public class DensityUtil {
         return (int) (spValue * fontScale + 0.5f);
     }
 
+
+
     public static int getDisplayWidth(Context context) {
         DisplayMetrics dm = new DisplayMetrics();
         ((WindowManager) context.

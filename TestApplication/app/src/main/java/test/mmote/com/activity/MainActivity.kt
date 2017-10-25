@@ -17,6 +17,7 @@ class MainActivity : BaseActivity() {
     }
 
     private fun addViews() {
+        testThumb()
         testFragment()
         testWave()
         testJavaOrder()
@@ -39,6 +40,16 @@ class MainActivity : BaseActivity() {
         switchButton()
         canvasButton()
         testWebpButton()
+    }
+
+
+    private fun testThumb() {
+        val button = Button(mContext)
+        button.text = "test Thumb"
+        button.setOnClickListener {
+            startActivity(Intent(this, ThumbUpActivity::class.java))
+        }
+        ll_container!!.addView(button)
     }
 
 

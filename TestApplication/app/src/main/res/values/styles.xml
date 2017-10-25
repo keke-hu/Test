@@ -15,4 +15,18 @@
         <item name="contentInsetStart">6dp</item>
         <item name="contentInsetEnd">6dp</item>
     </style>
+
+    <declare-styleable name="SegmentLine">
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="iv_radius" format="dimension" />
+        <attr name="iv_topLeftRadius" format="dimension" />
+        <attr name="iv_topRightRadius" format="dimension" />
+        <attr name="iv_bottomLeftRadius" format="dimension" />
+        <attr name="iv_bottomRightRadius" format="dimension" />
+    </declare-styleable>
+
 </resources>

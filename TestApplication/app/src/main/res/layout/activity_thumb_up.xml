@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="test.mmote.com.activity.ThumbUpActivity">
+
+    <test.mmote.com.widge.ThumbUpView
+        android:id="@+id/tuv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <test.mmote.com.widge.SegmentLine
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:lineColor="#7f7f7f"
+        app:lineWidth="15dp" />
+
+</RelativeLayout>
